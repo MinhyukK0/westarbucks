@@ -17,7 +17,7 @@ class Categories(models.Model):
 class Products(models.Model):
     category_id = models.ForeignKey('Categories', on_delete = models.CASCADE)
     kr_name = models.CharField(max_length = 20)
-    en_name = models.CharField(max_length = 20)
+    en_name = models.CharField(max_length = 50)
     product_info = models.TextField()
     new_product = models.BooleanField()
     
